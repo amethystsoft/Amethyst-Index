@@ -66,6 +66,7 @@ class MeiliSearchController {
             "--db-path", meiliDbPath,
             "--http-addr", url,
             "--master-key", masterKey,
+            "--max-indexing-memory", "100mb"
         ]
 
         let outputPipe = Pipe()
